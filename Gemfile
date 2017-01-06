@@ -28,6 +28,7 @@ gem 'simple_form'
 gem 'devise'
 # Image Uploader
 gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog'
 # Connects to Image Magick to manipulate images

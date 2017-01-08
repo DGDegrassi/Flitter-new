@@ -31,6 +31,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog'
+gem 'stripe'
 # Connects to Image Magick to manipulate images
 gem 'mini_magick', '~> 4.3.1'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

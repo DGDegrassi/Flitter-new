@@ -33,6 +33,7 @@ gem 'figaro'
 gem 'fog'
 gem 'stripe'
 gem 'ranked-model'
+gem 'jquery-ui-rails'
 # Connects to Image Magick to manipulate images
 gem 'mini_magick', '~> 4.3.1'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring

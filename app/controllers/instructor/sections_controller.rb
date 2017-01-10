@@ -33,7 +33,7 @@ class Instructor::SectionsController < ApplicationController
 
   helper_method :current_course
   def current_course
-    if params[:course_id]
+    if params[:course_id].present?
       @current_course ||= Course.find(params[:course_id])
     else
       current_section.course_id

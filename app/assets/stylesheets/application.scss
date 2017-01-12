@@ -12,7 +12,8 @@
  *
  *= require_self
  *= require_tree .
- *= require jquery-ui
+ /*
+ *= require jquery-ui/sortable
  */
  
 @import "bootstrap-sprockets";

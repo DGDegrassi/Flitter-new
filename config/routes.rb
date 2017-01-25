@@ -5,17 +5,16 @@ Rails.application.routes.draw do
   resources :courses, only: [:index, :show] do
     resources :enrollments, only: :create
   end
-  resources :lessons, only: [:show]
+  resources :lessons, :only => [:show]
   namespace :instructor do
-    resources :sections, only: [:update]
-    resources :lessons, only: [:update]
-    resources :sections, only: [] do
-      resources :lessons, only: [:new, :create]
+    resources :lessons, :only => [:update]
+    resources :sections, :only => [:update] do
     end
-    resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:create]
+    resources :courses, :only => [:new, :create, :show] do
+      resources :sections, :only => [:create]
     end
   end
+end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -70,4 +69,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
